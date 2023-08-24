@@ -14,7 +14,7 @@ app.use(function (req, res, next) {
   );
   next();
 });
-const port = 2410;
+const port = process.env.PORT || 2410;
 app.listen(port, () => console.log(`Node app listening on port ${port}`));
 let baseURL = "https://app234.onrender.com";
 let axios = require("axios");
